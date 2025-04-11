@@ -10,7 +10,48 @@
 ## Problem 1.
 
 ## Problem 2.
+<div>
+    <p float = 'left'>
+        <img src="./p2_phase.png"  width="100%">
+    </p>
+</div>
+
+<div>
+    <p float = 'left'>
+        <img src="./p2_response.png"  width="100%">
+    </p>
+</div>
+
+<div>
+    <p float = 'left'>
+        <img src="./p2_error.png"  width="75%">
+    </p>
+</div>
+
+<div>
+    <p float = 'left'>
+        <img src="./p2_energy.png"  width="100%">
+    </p>
+</div>
+
+<div>
+    <p float = 'left'>
+        <img src="./p2_energy_error.png"  width="75%">
+    </p>
+</div>
 
 ## Problem 3.
 
 ## Problem 4.
+
+<div>
+    <p float = 'left'>
+        <img src="./p4_b.png"  width="100%">
+    </p>
+</div>
+
+<div>
+    <p float = 'left'>
+        <img src="./p4_b_adaptive_time.png">
+    </p>
+</div>
