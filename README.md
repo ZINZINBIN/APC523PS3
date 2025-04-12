@@ -8,6 +8,23 @@
 </script>
 
 ## Problem 1.
+<div>
+    <p float = 'left'>
+        <img src="./p1_a.png"  width="50%">
+    </p>
+</div>
+
+<div>
+    <p float = 'left'>
+        <img src="./p1_b_2nd.png"  width="100%">
+    </p>
+</div>
+
+<div>
+    <p float = 'left'>
+        <img src="./p1_b_3rd.png"  width="50%">
+    </p>
+</div>
 
 ## Problem 2.
 <div>
