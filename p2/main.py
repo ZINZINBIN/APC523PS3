@@ -170,6 +170,32 @@ if __name__ == "__main__":
     fig, axes = plt.subplots(1, 4, figsize=(16, 4))
     axes = axes.ravel()
 
+    axes[0].plot(us_fe[:, 0], ts, "r", label="Forward Euler")
+    axes[0].set_ylabel("time")
+    axes[0].set_xlabel("$x(t)$")
+    axes[0].set_title(r"Forward Euler")
+
+    axes[1].plot(us_se[:, 0],ts, "g", label="Symplectic Euler")
+    axes[1].set_ylabel("time")
+    axes[1].set_xlabel("$x(t)$")
+    axes[1].set_title(r"Symplectic Euler")
+
+    axes[2].plot(us_rk[:, 0], ts, "b", label="RK4")
+    axes[2].set_ylabel("time")
+    axes[2].set_xlabel("$x(t)$")
+    axes[2].set_title(r"RK4")
+
+    axes[3].plot(us_gt[:, 0], ts, "k", label="Analytic solution")
+    axes[3].set_ylabel("time")
+    axes[3].set_xlabel("$x(t)$")
+    axes[3].set_title(r"Analytic solution")
+
+    fig.tight_layout()
+    fig.savefig("./p2_response_xt.png")
+
+    fig, axes = plt.subplots(1, 4, figsize=(16, 4))
+    axes = axes.ravel()
+
     axes[0].plot(us_fe[:, 1], us_fe[:,0], "r", label="Forward Euler")
     axes[0].set_xlabel("$v(t)$")
     axes[0].set_ylabel("$x(t)$")

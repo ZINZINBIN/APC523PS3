@@ -37,6 +37,10 @@ if __name__ == "__main__":
     fig.savefig("./p1_a.png")
 
     # Problem (b). Explicit BDF for second-order and third order method
+    x = np.linspace(-4, 4, 400)
+    y = np.linspace(-4, 4, 400)
+    X, Y = np.meshgrid(x, y)
+    Z = X + 1j * Y
     bdf_2nd_p, bdf_2nd_m = BDF_2nd(Z)
 
     fig, axes = plt.subplots(1, 2, figsize=(10, 6))
@@ -104,7 +108,7 @@ if __name__ == "__main__":
     axes[2].axvline(0, color="k", lw=0.5)
     axes[2].set_xlabel(r"$\Omega_r \Delta t$")
     axes[2].set_ylabel(r"$\Omega_i \Delta t$")
-    axes[2].set_title(r"\rho_3(z)")
+    axes[2].set_title(r"$\rho_3(z)$")
     axes[2].grid(True)
     axes[2].set_aspect("equal")
 
